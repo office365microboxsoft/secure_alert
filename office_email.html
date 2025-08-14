@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Office 365 Security Alert</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+      /* Prevent iOS auto-link styling */
+      a[x-apple-data-detectors] { color: inherit !important; text-decoration: none !important; }
+      /* Dark mode tweaks for some clients */
+      @media (prefers-color-scheme: dark) {
+        .bg { background-color: #111111 !important; }
+        .card { background-color: #1a1a1a !important; }
+        .text { color: #f2f2f2 !important; }
+        .muted { color: #bdbdbd !important; }
+        .btn { background-color: #2563eb !important; }
+      }
+    </style>
+  </head>
+  <body style="margin:0; padding:0; background:#f5f6f8;" class="bg">
+    <!-- Preheader (hidden preview text) -->
+    <div style="display:none; max-height:0; overflow:hidden; opacity:0;">
+      Urgent: verify your Office 365 account within 72 hours to prevent a temporary lock.
+    </div>
+
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#f5f6f8;">
+      <tr>
+        <td align="center" style="padding:24px;">
+          <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="600" style="width:100%; max-width:600px; background:#ffffff; border-radius:8px; overflow:hidden;" class="card">
+            <tr>
+              <td style="padding:24px 24px 8px 24px; font-family:Segoe UI, Roboto, Helvetica, Arial, sans-serif; font-size:22px; font-weight:700; color:#1f2937;" class="text">
+                Office 365 Security Alert
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:0 24px 8px 24px; font-family:Segoe UI, Roboto, Helvetica, Arial, sans-serif; font-size:14px; color:#6b7280;" class="muted">
+                We detected multiple failed sign-in attempts from an unrecognized device.
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:8px 24px; font-family:Segoe UI, Roboto, Helvetica, Arial, sans-serif; font-size:16px; line-height:1.55; color:#111827;" class="text">
+                For your protection, your account will be <strong>temporarily locked in 72 hours</strong> unless you confirm your identity.
+                During this lock, you will not be able to send or receive email or access OneDrive.
+              </td>
+            </tr>
+
+            <!-- Button -->
+            <tr>
+              <td align="center" style="padding:20px 24px 8px 24px;">
+                <!--[if mso]>
+                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="https://training.example.com/verify" style="height:44px;v-text-anchor:middle;width:240px;" arcsize="8%" stroke="f" fillcolor="#2563eb">
+                  <w:anchorlock/>
+                  <center style="color:#ffffff;font-family:Segoe UI, Roboto, Helvetica, Arial, sans-serif;font-size:16px;font-weight:600;">
+                    Verify My Account
+                  </center>
+                </v:roundrect>
+                <![endif]-->
+                <a href="https://training.example.com/verify"
+                   style="background:#2563eb; border-radius:6px; color:#ffffff; display:inline-block; font-family:Segoe UI, Roboto, Helvetica, Arial, sans-serif; font-size:16px; font-weight:600; line-height:44px; text-align:center; text-decoration:none; width:240px; mso-hide:all;"
+                   class="btn">
+                  Verify My Account
+                </a>
+              </td>
+            </tr>
+
+            <!-- Plain link fallback -->
+            <tr>
+              <td align="center" style="padding:0 24px 16px 24px; font-family:Segoe UI, Roboto, Helvetica, Arial, sans-serif; font-size:12px; color:#6b7280;" class="muted">
+                <br>
+                <span style="word-break:break-all;"></span>
+              </td>
+            </tr>
+
+            <!-- Contact -->
+            <tr>
+              <td style="padding:8px 24px 24px 24px; font-family:Segoe UI, Roboto, Helvetica, Arial, sans-serif; font-size:14px; line-height:1.6; color:#111827;" class="text">
+                If you believe this message was sent in error, contact our Security Operations Team at
+                <a href="mailto:alerts@security.microsoft.com" style="color:#2563eb; text-decoration:none;">alerts@security.microsoft.com</a>
+                or <a href="tel:+1-800-865-9408" style="color:#2563eb; text-decoration:none;">+1-800-865-9408</a>.
+              </td>
+            </tr>
+
+            <!-- Footer -->
+            <tr>
+              <td style="padding:16px 24px 24px 24px; font-family:Segoe UI, Roboto, Helvetica, Arial, sans-serif; font-size:12px; color:#6b7280; border-top:1px solid #e5e7eb;" class="muted">
+                Thank you for helping us keep your account secure.<br><br>
+                — Office 365 Security Team
+              </td>
+            </tr>
+          </table>
+
+          <!-- Sender details (helps mailbox providers) -->
+          <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="600" style="width:100%; max-width:600px; margin-top:12px;">
+            <tr>
+              <td align="center" style="font-family:Segoe UI, Roboto, Helvetica, Arial, sans-serif; font-size:12px; color:#9ca3af;">
+                Contoso, Inc. • 1 Microsoft Way • Redmond, WA 98052<br>
+                You’re receiving security notifications for your organization account.
+              </td>
+            </tr>
+          </table>
+
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
